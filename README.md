@@ -14,7 +14,7 @@ Makween es una página web ficticia que simula ser el sitio web oficial de un ta
 
 ## Capturas de Pantalla
 
-_Inserta aquí algunas capturas de pantalla de tu página web para mostrar su apariencia y funcionalidades._
+...
 
 ## Cómo Contribuir
 
@@ -37,8 +37,8 @@ _Inserta aquí algunas capturas de pantalla de tu página web para mostrar su ap
 
 Este proyecto fue desarrollado por:
 
-- [Nombre Apellido](https://github.com/usuario1)
-- [Nombre Apellido](https://github.com/usuario2)
+- [Carlos Echeverria] https://github.com/CarlitosLechugaxd/
+- [Marcelo Pino](https://github.com/usuario2)
 - [Nombre Apellido](https://github.com/usuario3)
 
 ## Licencia
