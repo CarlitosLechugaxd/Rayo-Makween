@@ -1,0 +1,259 @@
+body {
+    background: linear-gradient(to right, #859399, #283843);
+}
+.navbar {
+    background: linear-gradient(to right, #859399, #283843);
+
+}
+
+.nav-link {
+    padding-bottom: 5px; 
+    border-bottom: 4px solid transparent; 
+    transition: border-color 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    border-color: #000000; 
+}
+
+.navbar-nav .dropdown .nav-link {
+    border-bottom: none;
+    transition: border-bottom 0s ease; 
+}
+
+.navbar-nav .dropdown:hover .nav-link,
+.navbar-nav .dropdown .nav-link:hover {
+    border-bottom: 4px solid #000000; 
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    margin-left: 0.1rem; 
+}
+
+#box-search {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1000;
+    width: 100%;
+    /* Centrar los elementos de la barra de búsqueda */
+    text-align: center;
+}
+
+#box-search a {
+    color: black; /* Cambiar el color del texto a negro */
+    text-decoration: none; /* Eliminar el subrayado */
+    display: block; /* Alinear los elementos en bloques */
+    padding: 5px 0; /* Añadir espacio entre los elementos */
+}
+
+#box-search a:hover {
+    color: #333; /* Cambiar el color del texto al pasar el cursor */
+}
+
+
+.logo-redondeado {
+    border: 15px;
+    border-radius: 5px;
+}
+
+#carouselpersonalizado {
+    width: 22%;
+    margin: auto;
+    margin-top: 5%;
+}
+.carousel-item img {
+    height: 20%;
+    border: 15px;
+    border-radius: 15px;
+}
+
+#carouselpersonalizado2 {
+    width: 22%;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.carousel-item2 img {
+    height: 20%;
+    border: 15px;
+    border-radius: 15px;
+}
+
+.carousel-container {
+    background: linear-gradient(to right, #859399, #283843);
+    width: 69%;
+    height: 400px;
+    margin: auto;
+    margin-top: 60px; 
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.carousel-item2 {
+    height: auto; 
+}
+
+.titulo {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
+}
+
+.titulo-line {
+    border: 0; 
+    border-top: 1px solid #000;
+    position: absolute;
+    width: 100%;
+    top: 100%; 
+    left: 0;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.footer {
+    background-color: #202020;
+}
+
+.footer span {
+    color: white !important;
+}
+
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#login {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.txt_field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -18px;
+    font-size: 14px;
+    color: #007bff;
+}
+
+.txt_field input:focus ~ .error,
+.txt_field input:valid ~ .error {
+    display: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #999;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.pass {
+    color: #007bff;
+    font-size: 12px;
+    margin-top: -10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pass:hover {
+    opacity: 0.7;
+}
+
+.log-btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #007bff;
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.log-btn:hover {
+    background-position: right;
+}
+
+.signup_link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.signup_link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup_link a:hover {
+    text-decoration: underline;
+}
+
+.volver {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.volver a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.volver a:hover {
+    text-decoration: underline;
+}
+
+.centro-ayuda {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.centro-ayuda li {
+    margin-bottom: 10px; 
+}

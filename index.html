@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayo Makween</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+    <a class="navbar-brand" href="#">
+        <img src="img/logo.png" class="logo-redondeado" alt="" width="40" height="40">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <div class="d-flex align-items-center"> <!-- Nuevo: Contenedor para el ícono y el texto -->
+                  <i class="fa-solid fa-house"></i>
+                  <span class="ms-2">Inicio</span> <!-- Cambio: Añadir un margen a la izquierda -->
+              </div>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-rectangle-list"></i>
+            Servicios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicios">
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownCategoria" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-layer-group"></i>
+                Categoría
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategoria">
+                <li>
+                  <a class="dropdown-item" href="mantencionMotor.html">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-gauge-simple-high"></i>
+                      <span class="ms-2">Motor</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mantencionFrenos.html">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-car-burst"></i>
+                      <span class="ms-2">Frenos</span> 
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mantencionTransmision.html">
+                    <div>
+                      <i class="fa-solid fa-oil-can"></i>
+                      <span class="ms-2">Transmisión</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownCategoria" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              Mecánicos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategoria">
+                <li>
+                  <a class="dropdown-item" href="mecanico1.html">
+                    <div class="d-flex align-items-center"> 
+                        <i class="fa-solid fa-user"></i>
+                        <span class="ms-2">Marcelo  Pino</span> 
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mecanico2.html">
+                    <div class="d-flex align-items-center"> 
+                        <i class="fa-solid fa-user"></i>
+                        <span class="ms-2">Daniel Álvarez</span> 
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mecanico3.html">
+                    <div class="d-flex align-items-center"> 
+                        <i class="fa-solid fa-user"></i>
+                        <span class="ms-2">Carlos Echeverría</span> 
+                    </div>
+                  </a>
+                </li>
+              </ul>
+          </li>
+        </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">
+              <div class="d-flex align-items-center"> 
+                  <i class="fa-solid fa-message"></i>
+                  <span class="ms-2">Contacto</span> 
+              </div>
+            </a>
+          </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCuenta" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+            Cuenta
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownCuenta">
+              <li>
+                <a class="dropdown-item" href="login.html">
+                  <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span class="ms-2">Iniciar Sesión</span> 
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="login.html">
+                  <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span class="ms-2">Registrarse</span> 
+                  </div>
+                </a>
+              </li>
+            </ul>
+        </ul>
+        <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+    </div>
+    </div>
+  </nav>
+  <ul id="box-search">
+    <li>
+      <a href="supra.html">
+        <i class="fas fa-search" id="icon-search"></i> Mantención Motor
+      </a>
+    </li>
+    <li>
+      <a href="mustang.html">
+        <i i class="fa-solid fa-magnifying-glass"></i> Mantención Frenos
+      </a>
+    </li>
+    <li>
+      <a href="minicooper.html">
+        <i class="fa-solid fa-magnifying-glass"></i> Mantención Transmisión
+      </a>
+    </li>
+    <li>
+      <a href="mantencionMotor.html">
+        <i class="fa-solid fa-magnifying-glass"></i> Servicio Motor
+      </a>
+    </li>
+    <li>
+      <a href="mantencionFrenos.html">
+        <i class="fa-solid fa-magnifying-glass"></i> Servicio Frenos
+      </a>
+    </li>
+    <li>
+      <a href="mantencionTransmision.html">
+        <i class="fa-solid fa-magnifying-glass"></i> Servicio Transmisión
+      </a>
+    </li>
+    <li>
+      <a href="mecanico1.html">
+        <i class="fa-solid fa-magnifying-glass"></i> Mecánico Jefe
+      </a>
+    </li>
+    <li>
+      <a href="mecanico2.html">
+        <i class="fa-solid fa-magnifying-glass"></i> Técnico Automotriz
+      </a>
+    </li>
+    <li>
+      <a href="mecanico3.html">
+        <i class="fa-solid fa-magnifying-glass"></i> Técnico Automotriz Asistente
+      </a>
+    </li>
+    <li>
+      <a href="mecanico1.html">
+        <i class="fa-solid fa-magnifying-glass"></i> Marcelo Pino
+      </a>
+    </li>
+    <li>
+      <a href="mecanico2.html">
+        <i class="fa-solid fa-magnifying-glass"></i> Daniel Álvarez
+      </a>
+    </li>
+    <li>
+      <a href="mecanico3.html">
+        <i class="fa-solid fa-magnifying-glass"></i> Carlos Echeverría
+      </a>
+    </li>
+  </ul>
+  
+<div id="cover-search"></div>
+
+  <video autoplay muted loop id="videoFondo">
+    <source src="img/motor.mp4" type="video/mp4">
+
+  </video>
+  <div id="carouselpersonalizado" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="supra.html">
+            <img src="img/supra.jpeg" class="d-block w-100" alt="Slide 1">
+          </a> 
+        </div>
+        <div class="carousel-item">
+          <a href="mustang.html">
+            <img src="img/mustang.png" class="d-block w-100" alt="Slide 2">
+          </a>  
+        </div>
+        <div class="carousel-item">
+          <a href="minicooper.html">
+            <img src="img/minicooper.png" class="d-block w-100" alt="Slide 3">
+          </a>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselpersonalizado" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselpersonalizado" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+<div class="contenido-despues-carrusel">
+  <div class="container pt-5 pb-5">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+              <div class="card bg-transparent text-white p-3 mb-3">
+                  <h3 class="mb-3">Servicio al cliente</h3>
+                  <ul class="centro-ayuda">
+                      <li><a class="text-decoration-none text-white" href="terminosycondiciones.html">Términos y condiciones</a></li>
+                      <li><a class="text-decoration-none text-white" href="politicaprivacidad.html">Políticas de privacidad</a></li>
+                      <li><a class="text-decoration-none text-white" href="centroayuda.html">Centro de ayuda</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card bg-transparent text-white p-3 mb-3">
+                  <h3 class="mb-3">Redes Sociales</h3>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a class="text-decoration-none text-white" href="https://web.facebook.com/profile.php?id=61559123597374">
+                              <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-1-2.png" width="20" height="20" alt="Facebook" class="red-social-logo mr-2">
+                              Facebook
+                          </a>
+                      </li>
+                      <li>
+                          <a class="text-decoration-none text-white" href="https://www.instagram.com/makweenrayo/">
+                              <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-3.png" width="20" height="20" alt="Instagram" class="red-social-logo mr-2">
+                              Instagram
+                          </a>
+                      </li>
+                      <li>
+                          <a class="text-decoration-none text-white" href="https://twitter.com/MakweenRayo">
+                              <img src="https://static.vecteezy.com/system/resources/previews/027/395/710/original/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" width="20" height="20" alt="X" class="red-social-logo mr-2">
+                              X
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card bg-transparent text-white p-3 mb-3">
+                  <h3 class="mb-3">Contacto</h3>
+                  <div class="mb-3">
+                      <img src="https://static.vecteezy.com/system/resources/previews/000/331/674/original/vector-location-icon.jpg" width="20" height="20" alt="Ubicación" class="contacto-icono">
+                      Avenida Providencia #2150, Providencia, Santiago, Chile
+                  </div>
+                  <div class="mb-3">
+                      <img src="https://png.pngtree.com/png-clipart/20190630/original/pngtree-vector-phone-cell-icon-png-image_4162803.jpg" width="20" height="20" alt="Teléfono" class="contacto-icono"> <!-- Icono de teléfono -->
+                      +56 2 2345 6789
+                  </div>
+                  <div>
+                      <img src="https://static.vecteezy.com/system/resources/previews/000/564/377/original/email-symbol-icon-vector.jpg" width="20" height="20" alt="Correo" class="contacto-icono"> <!-- Icono de correo -->
+                      makweenrayo@gmail.com
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  <footer class="footer mt-auto py-3">
+    <div class="container text-center">
+      <span class="text-muted">© 2024 Taller Mecánico "RAYO MAKWEEN" Todos los derechos reservados.</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-OkC49E0VIJrTb+NGkl5VHl0PjP5YSZqzHYhBIyJ4L5BYFqB78v8U9tdbHo5d8Cw3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>    
+  <script src="javascript.js"></script> 
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Selección de los elementos de submenú de categoría
+        const dropdownSubmenus = document.querySelectorAll('.dropdown-submenu');
+    
+        // Agregar un event listener a cada elemento de submenú de categoría
+        dropdownSubmenus.forEach(function(dropdownSubmenu) {
+          const dropdownToggle = dropdownSubmenu.querySelector('.dropdown-toggle');
+    
+          dropdownToggle.addEventListener('click', function(event) {
+            // Evitar que el evento de clic propague
+            event.stopPropagation();
+    
+            // Toggle de la clase 'show' en el submenú
+            dropdownSubmenu.classList.toggle('show');
+          });
+        });
+    
+        // Cerrar el submenú cuando se haga clic fuera de él
+        window.addEventListener('click', function(event) {
+          dropdownSubmenus.forEach(function(dropdownSubmenu) {
+            if (!dropdownSubmenu.contains(event.target)) {
+              dropdownSubmenu.classList.remove('show');
+            }
+          });
+        });
+      });
+  </script>
+    
+</body>
+</html>
