@@ -28,162 +28,163 @@
       position: absolute;
       top: 100%;
       left: 0;
-      z-index: 1000; /* Asegura que aparezca encima de otros elementos */
-      background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
-      border: 1px solid #ced4da; /* Borde gris */
-      max-height: 200px; /* Altura máxima para la lista de sugerencias */
-      overflow-y: auto; /* Permitir desplazamiento vertical si es necesario */
+      z-index: 1000;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ced4da;
+      max-height: 200px;
+      overflow-y: auto;
       width: 100%;
-      display: none; /* Ocultar inicialmente */
+      display: none;
     }
-    
+
     #cover-search {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      z-index: 999; /* Asegura que esté detrás del cuadro de búsqueda */
-      display: none; /* Ocultar inicialmente */
+      z-index: 999;
+      display: none;
     }
-
   </style>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-    <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#">
         <img src="img/logo.png" class="logo-redondeado" alt="" width="40" height="40">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="indexusuario.html">
-            <div class="d-flex align-items-center"> <!-- Nuevo: Contenedor para el ícono y el texto -->
+              <div class="d-flex align-items-center">
                 <i class="fa-solid fa-house"></i>
-                <span class="ms-2">Inicio</span> <!-- Cambio: Añadir un margen a la izquierda -->
-            </div>
+                <span class="ms-2">Inicio</span>
+              </div>
             </a>
-        </li>
-        <li class="nav-item dropdown">
+          </li>
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-rectangle-list"></i>
-            Servicios
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-rectangle-list"></i>
+              Servicios
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicios">
-            <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownCategoria" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-layer-group"></i>
-                Categoría
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownCategoria" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-layer-group"></i>
+                  Categoría
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategoria">
-                <li>
-                <a class="dropdown-item" href="mantencionMotorlog.html">
-                    <div class="d-flex align-items-center">
-                    <i class="fa-solid fa-gauge-simple-high"></i>
-                    <span class="ms-2">Motor</span>
-                    </div>
+                  <li>
+                    <a class="dropdown-item" href="mantencionMotorlog.html">
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-gauge-simple-high"></i>
+                        <span class="ms-2">Motor</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="mantencionFrenoslog.html">
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-car-burst"></i>
+                        <span class="ms-2">Frenos</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="mantencionTransmisionlog.html">
+                      <div>
+                        <i class="fa-solid fa-oil-can"></i>
+                        <span class="ms-2">Transmisión</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownCategoria" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  Mecánicos
                 </a>
-                </li>
-                <li>
-                <a class="dropdown-item" href="mantencionFrenoslog.html">
-                    <div class="d-flex align-items-center">
-                    <i class="fa-solid fa-car-burst"></i>
-                    <span class="ms-2">Frenos</span> 
-                    </div>
-                </a>
-                </li>
-                <li>
-                <a class="dropdown-item" href="mantencionTransmisionlog.html">
-                    <div>
-                    <i class="fa-solid fa-oil-can"></i>
-                    <span class="ms-2">Transmisión</span>
-                    </div>
-                </a>
-                </li>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategoria">
+                  <li>
+                    <a class="dropdown-item" href="mecanico1log.html">
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="ms-2">Marcelo Pino</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="mecanico2log.html">
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="ms-2">Daniel Álvarez</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="mecanico3log.html">
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="ms-2">Carlos Echeverría</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
             </ul>
-        </li>
-        <li class="dropdown-submenu">
-            <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownCategoria" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-            Mecánicos
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategoria">
-                <li>
-                <a class="dropdown-item" href="mecanico1log.html">
-                    <div class="d-flex align-items-center"> 
-                        <i class="fa-solid fa-user"></i>
-                        <span class="ms-2">Marcelo  Pino</span> 
-                    </div>
-                </a>
-                </li>
-                <li>
-                <a class="dropdown-item" href="mecanico2log.html">
-                    <div class="d-flex align-items-center"> 
-                        <i class="fa-solid fa-user"></i>
-                        <span class="ms-2">Daniel Álvarez</span> 
-                    </div>
-                </a>
-                </li>
-                <li>
-                <a class="dropdown-item" href="mecanico3log.html">
-                    <div class="d-flex align-items-center"> 
-                        <i class="fa-solid fa-user"></i>
-                        <span class="ms-2">Carlos Echeverría</span> 
-                    </div>
-                </a>
-                </li>
-            </ul>
-        </li>
-        </ul>
-        <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="contactolog.html">
-            <div class="d-flex align-items-center"> 
+              <div class="d-flex align-items-center">
                 <i class="fa-solid fa-message"></i>
-                <span class="ms-2">Contacto</span> 
-            </div>
+                <span class="ms-2">Contacto</span>
+              </div>
             </a>
-        </li>
-        <li class="nav-item dropdown">
+          </li>
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCuenta" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-user"></i>
-            Usuario
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user"></i>
+              Usuario
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownCuenta">
-                <li>
+              <li>
                 <a class="dropdown-item" href="perfil.html">
-                    <div class="d-flex align-items-center">
+                  <div class="d-flex align-items-center">
                     <i class="fa-solid fa-address-card"></i>
-                    <span class="ms-2">Perfil</span> 
-                    </div>
+                    <span class="ms-2">Perfil</span>
+                  </div>
                 </a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="index.html">
-                        <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-right-from-bracket"></i>
-                        <span class="ms-2">Cerrar Sesión</span> 
-                        </div>
+              </li>
+              <li>
+                <a class="dropdown-item" href="index.html">
+                  <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="ms-2">Cerrar Sesión</span>
+                  </div>
                 </a>
-                </li>
+              </li>
+            </ul>
         </ul>
-    </ul>
         <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
+      </div>
     </div>
-    </div>
-</nav>
+  </nav>
 
-    <div id="cover-search"></div>
+  <div id="cover-search"></div>
 
   <video autoplay muted loop id="videoFondo">
     <source src="img/motor.mp4" type="video/mp4">
@@ -192,31 +193,42 @@
   <div class="container mantencion-caja">
     <h1 style="color: white;">
       <br>
-        Servicio
+      Servicio
     </h1>
     <ul class="list-group">
       <li class="list-group-item">
         <br>
-        <h2>Mantención Motor</h2><hr><br>
+        <h2>Mantención Motor</h2>
+        <hr><br>
         <h5 class="mb-3">Cambio de filtro de aceite:</h5>
-        <p class="mb-0">Esto es crucial para mantener la lubricación adecuada del motor y prolongar su vida útil. El aceite limpio ayuda a reducir el desgaste de las piezas internas del motor y a mantenerlo funcionando de manera óptima.
+        <p class="mb-0">Esto es crucial para mantener la lubricación adecuada del motor y prolongar su vida útil. El
+          aceite limpio ayuda a reducir el desgaste de las piezas internas del motor y a mantenerlo funcionando de
+          manera óptima.
       </li>
       <li class="list-group-item">
         <h5 class="mb-3">Revisión y ajuste de las correas de transmisión:</h5>
-        <p class="mb-0">Las correas de transmisión desgastadas o mal ajustadas pueden causar problemas graves, como la pérdida de potencia del motor o la falla de componentes importantes. Es importante verificar regularmente su estado y ajustarlas según sea necesario.
+        <p class="mb-0">Las correas de transmisión desgastadas o mal ajustadas pueden causar problemas graves, como la
+          pérdida de potencia del motor o la falla de componentes importantes. Es importante verificar regularmente su
+          estado y ajustarlas según sea necesario.
         </p>
       </li>
       <li class="list-group-item">
         <h5 class="mb-3">Inspección y/o cambio de las bujías:</h5>
-        <p class="mb-0">Las bujías desgastadas pueden provocar una combustión ineficiente, lo que afecta el rendimiento del motor y aumenta el consumo de combustible. Reemplazarlas según el intervalo recomendado ayuda a mantener el motor funcionando suavemente.
+        <p class="mb-0">Las bujías desgastadas pueden provocar una combustión ineficiente, lo que afecta el rendimiento
+          del motor y aumenta el consumo de combustible. Reemplazarlas según el intervalo recomendado ayuda a mantener
+          el motor funcionando suavemente.
       </li>
       <li class="list-group-item">
         <h5 class="mb-3">Revisión y ajuste del sistema de frenos:</h5>
-        <p class="mb-0">Un sistema de frenos en buen estado es fundamental para la seguridad del vehículo. Verificar regularmente el estado de las pastillas, discos y líquido de frenos, así como el funcionamiento adecuado del sistema, ayuda a prevenir accidentes y garantiza un frenado eficiente.
+        <p class="mb-0">Un sistema de frenos en buen estado es fundamental para la seguridad del vehículo. Verificar
+          regularmente el estado de las pastillas, discos y líquido de frenos, así como el funcionamiento adecuado del
+          sistema, ayuda a prevenir accidentes y garantiza un frenado eficiente.
       </li>
       <li class="list-group-item">
         <h5 class="mb-3">Inspección del sistema de escape en busca de fugas o daños:</h5>
-        <p class="mb-0">Un escape en mal estado puede afectar la eficiencia del motor y aumentar las emisiones contaminantes. Es importante inspeccionar regularmente el sistema de escape en busca de fugas, grietas o daños, y repararlos o reemplazarlos según sea necesario.
+        <p class="mb-0">Un escape en mal estado puede afectar la eficiencia del motor y aumentar las emisiones
+          contaminantes. Es importante inspeccionar regularmente el sistema de escape en busca de fugas, grietas o
+          daños, y repararlos o reemplazarlos según sea necesario.
       </li>
     </ul>
   </div>
@@ -231,86 +243,87 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script src="javascript.js"></script> 
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        // Selección de los elementos de submenú de categoría
-        const dropdownSubmenus = document.querySelectorAll('.dropdown-submenu');
-    
-        // Agregar un event listener a cada elemento de submenú de categoría
-        dropdownSubmenus.forEach(function(dropdownSubmenu) {
-          const dropdownToggle = dropdownSubmenu.querySelector('.dropdown-toggle');
-    
-          dropdownToggle.addEventListener('click', function(event) {
-            // Evitar que el evento de clic propague
-            event.stopPropagation();
-    
-            // Toggle de la clase 'show' en el submenú
-            dropdownSubmenu.classList.toggle('show');
-          });
-        });
-    
-        // Cerrar el submenú cuando se haga clic fuera de él
-        window.addEventListener('click', function(event) {
-          dropdownSubmenus.forEach(function(dropdownSubmenu) {
-            if (!dropdownSubmenu.contains(event.target)) {
-              dropdownSubmenu.classList.remove('show');
-            }
-          });
+  <script src="javascript.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const dropdownSubmenus = document.querySelectorAll('.dropdown-submenu');
+
+
+      dropdownSubmenus.forEach(function (dropdownSubmenu) {
+        const dropdownToggle = dropdownSubmenu.querySelector('.dropdown-toggle');
+
+        dropdownToggle.addEventListener('click', function (event) {
+
+          event.stopPropagation();
+
+
+          dropdownSubmenu.classList.toggle('show');
         });
       });
+
+
+      window.addEventListener('click', function (event) {
+        dropdownSubmenus.forEach(function (dropdownSubmenu) {
+          if (!dropdownSubmenu.contains(event.target)) {
+            dropdownSubmenu.classList.remove('show');
+          }
+        });
+      });
+    });
   </script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       const searchInput = document.querySelector('.form-control');
       const boxSearch = document.getElementById('box-search');
-  
+
       if (searchInput && boxSearch) {
-          const items = boxSearch.querySelectorAll('li');
-  
-          searchInput.addEventListener('input', function(event) {
-              const searchText = event.target.value.trim().toLowerCase();
-  
-              let hasResults = false;
-  
-              items.forEach(function(item) {
-                  const text = item.textContent.trim().toLowerCase();
-  
-                  if (text.includes(searchText)) {
-                      item.style.display = 'block';
-                      hasResults = true;
-                  } else {
-                      item.style.display = 'none';
-                  }
-              });
-  
-              if (hasResults || searchText.length === 0) {
-                  boxSearch.style.display = 'block';
-              } else {
-                  boxSearch.style.display = 'none';
-              }
+        const items = boxSearch.querySelectorAll('li');
+
+        searchInput.addEventListener('input', function (event) {
+          const searchText = event.target.value.trim().toLowerCase();
+
+          let hasResults = false;
+
+          items.forEach(function (item) {
+            const text = item.textContent.trim().toLowerCase();
+
+            if (text.includes(searchText)) {
+              item.style.display = 'block';
+              hasResults = true;
+            } else {
+              item.style.display = 'none';
+            }
           });
-  
-          searchInput.addEventListener('focus', function() {
-              if (searchInput.value.trim().length > 0) {
-                  boxSearch.style.display = 'block';
-              }
-          });
-  
-          searchInput.addEventListener('blur', function() {
-              // Espera 200 milisegundos para asegurarse de que el clic en la lista de sugerencias se maneje antes de ocultarla
-              setTimeout(function() {
-                  boxSearch.style.display = 'none';
-              }, 200);
-          });
-  
-          document.addEventListener('click', function(event) {
-              if (!boxSearch.contains(event.target) && event.target !== searchInput) {
-                  boxSearch.style.display = 'none';
-              }
-          });
+
+          if (hasResults || searchText.length === 0) {
+            boxSearch.style.display = 'block';
+          } else {
+            boxSearch.style.display = 'none';
+          }
+        });
+
+        searchInput.addEventListener('focus', function () {
+          if (searchInput.value.trim().length > 0) {
+            boxSearch.style.display = 'block';
+          }
+        });
+
+        searchInput.addEventListener('blur', function () {
+
+          setTimeout(function () {
+            boxSearch.style.display = 'none';
+          }, 200);
+        });
+
+        document.addEventListener('click', function (event) {
+          if (!boxSearch.contains(event.target) && event.target !== searchInput) {
+            boxSearch.style.display = 'none';
+          }
+        });
       }
-  });
+    });
   </script>
 </body>
+
 </html>
