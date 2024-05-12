@@ -14,11 +14,11 @@ Makween es una página web ficticia que simula ser el sitio web oficial de un ta
 
 ## Capturas de Pantalla
 
-...
+![image](https://github.com/CarlitosLechugaxd/Rayo-Makween/assets/138074093/e336bc0d-0792-4668-a473-cbd92be4ec52)
 
-## Clona el git!
+![image](https://github.com/CarlitosLechugaxd/Rayo-Makween/assets/138074093/385da12d-cd15-47a4-9514-82558c5042b1)
 
-Clona tu fork: `git clone https://github.com/TuUsuario/Makween.git`
+
 
 ## Tecnologías Utilizadas
 
@@ -32,8 +32,8 @@ Este proyecto fue desarrollado por:
 
 - [Carlos Echeverria](https://github.com/CarlitosLechugaxd/)
 - Marcelo Pino
-- Nombre Apellido
+- Daniel Alvarez
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
