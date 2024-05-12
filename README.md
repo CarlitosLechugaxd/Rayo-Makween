@@ -6,7 +6,7 @@ Bienvenido/a al repositorio de Makween, una página web diseñada y desarrollada
 
 Makween es una página web ficticia que simula ser el sitio web oficial de un taller mecánico moderno. Nuestro objetivo principal fue crear una interfaz amigable y funcional que permita a los usuarios obtener información sobre los servicios ofrecidos por el taller, programar citas, y conocer más sobre el equipo de trabajo.
 
-## Característicasla experiencia del usuario.
+## Características y experiencia del usuario.
 - **Estilo Personalizado:** Utilizamos CSS para personalizar el aspecto visual de la página, creando una estética moderna y profesional que refleja la identidad del taller mecánico.
 
 - **Diseño Responsivo:** La página está diseñada para adaptarse a diferentes dispositivos, desde computadoras de escritorio hasta dispositivos móviles, garantizando una experiencia de usuario consistente.
