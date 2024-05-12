@@ -32,8 +32,8 @@ Este proyecto fue desarrollado por:
 
 - [Carlos Echeverria](https://github.com/CarlitosLechugaxd/)
 - Marcelo Pino
-- Nombre Apellido
+- Daniel Alvarez
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
