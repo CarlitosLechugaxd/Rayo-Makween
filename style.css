@@ -257,3 +257,27 @@ body {
 .centro-ayuda li {
     margin-bottom: 10px; 
 }
+
+label[for="perfil"] {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+.perfil-h1 {
+    text-align: center;
+}
+
+.profile-image-container {
+    width: 100px; /* Ajusta este valor según tu preferencia */
+    height: 100px; /* Ajusta este valor según tu preferencia */
+    overflow: hidden;
+    border-radius: 15%; /* Para hacerlo circular */
+    margin: 0 auto; /* Para centrarlo horizontalmente */
+}
+
+.profile-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
