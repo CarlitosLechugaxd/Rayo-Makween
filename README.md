@@ -16,16 +16,9 @@ Makween es una página web ficticia que simula ser el sitio web oficial de un ta
 
 ...
 
-## Cómo Contribuir
+## Clona el git!
 
-¡Agradecemos cualquier contribución! Si deseas colaborar en el desarrollo de Makween, sigue estos pasos:
-
-1. **Fork** el repositorio.
-2. Clona tu fork: `git clone https://github.com/TuUsuario/Makween.git`
-3. Crea una rama para tu nueva funcionalidad: `git checkout -b nueva-funcionalidad`
-4. Haz tus cambios y haz **commit**: `git commit -am 'Agrega nueva funcionalidad'`
-5. **Empuja** la rama a tu repositorio remoto: `git push origin nueva-funcionalidad`
-6. Haz un **pull request** en el repositorio original.
+Clona tu fork: `git clone https://github.com/TuUsuario/Makween.git`
 
 ## Tecnologías Utilizadas
 
